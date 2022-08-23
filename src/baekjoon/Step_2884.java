@@ -3,29 +3,23 @@ package EampleTest.src.baekjoon;
 import java.util.Scanner;
 
 public class Step_2884 {
-	
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-//		int x = scanner.nextInt();
-//		int y = scanner.nextInt();
-		
-		int x = 0;
-		int y = 30;
 
-		// 45분 일찍 기상
-		y-=45;
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+		int hour = scanner.nextInt();
+		int min = scanner.nextInt();
 
-		if (y >= 60) {
-			x+=1;
-			if (x > 23) {
-				x = 0;
+        if (min <= 45) {
+            min += 60 - 45;
+            if (hour > 0) {
+                hour -= 1;
+            } else {
+				hour = 24 - 1;
 			}
-		}
-
-		System.out.println(x);
-		System.out.println(y);
-		
-	}
+        }
+        System.out.println(hour);
+        System.out.println(min);
+    }
 	/*첫번째 버
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
