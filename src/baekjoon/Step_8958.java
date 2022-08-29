@@ -11,22 +11,21 @@ public class Step_8958 {
         final String ANSWER_O = "O";
         final String ANSWER_X = "X";
 
-        int j = 0;
-        for (int i = 0; i < n[0].length(); i++) {
-//            System.out.println(n[0].substring(i, i+1));
-//            String now = n[0].substring(i, i+1);
-            if ()
-            int k = 0;
-            k = 1 + i;
-            j += k;
-            System.out.println(k);
-        }
-        System.out.println(j);
-
-
-        for (String nn : n) {
-            for (int i = 0; i < nn.length(); i++) {
+        for (int b = 0; b < n.length; b++) {
+            int j = 0;
+            for (int i = 0; i < n[b].length(); i++) {
+                String now = n[b].substring(i, i + 1);
+                int c = 1;
+                int k = 0;
+                if (ANSWER_O.equals(now)) {
+                    k = c;
+                    j += k;
+                    c++;
+                } else {
+                    c = 1;
+                }
             }
+            System.out.println("정답 : " + j);
         }
 
     }
