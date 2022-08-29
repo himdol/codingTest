@@ -8,26 +8,19 @@ public class Step_8958 {
                 , "OOOOOOOOOO"
                 , "OOOOXOOOOXOOOOX"};
 
-        final String ANSWER_O = "O";
-        final String ANSWER_X = "X";
-
-        for (int b = 0; b < n.length; b++) {
+        for (int k = 0; k < n.length; k++) {
             int j = 0;
-            for (int i = 0; i < n[b].length(); i++) {
-                String now = n[b].substring(i, i + 1);
-                int c = 1;
-                int k = 0;
-                if (ANSWER_O.equals(now)) {
-                    k = c;
-                    j += k;
-                    c++;
-                } else {
+            int c = 1;
+            for (int i = 0; i < n[k].length(); i++) {
+                if ("X".equals(n[k].substring(i, i + 1))) {
                     c = 1;
+                } else {
+                    j += c;
+                    c++;
                 }
             }
-            System.out.println("정답 : " + j);
+            System.out.println(j);
         }
-
     }
 }
 
