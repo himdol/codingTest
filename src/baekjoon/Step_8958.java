@@ -2,6 +2,7 @@ package EampleTest.src.baekjoon;
 
 import java.util.Scanner;
 
+// 완료 202200830
 public class Step_8958 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
