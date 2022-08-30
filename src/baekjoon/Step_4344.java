@@ -6,25 +6,28 @@ import java.util.Scanner;
 public class Step_4344 {
     public static void main(String[] args) {
 
-        int a[][] = {
-                {50, 50, 70, 80, 100}
-                , {100, 95, 90, 80, 70, 60, 50}
-                , {70, 90, 80}
-                , {70, 90, 81}
-                , {100, 99, 98, 97, 96, 95, 94, 93, 91}
-        };
+        Scanner sc = new Scanner(System.in);
+        int C = sc.nextInt();
+        for (int i = 0; i < C; i++) {
 
-        for (int i = 0; i < a.length; i++) {
-            int total = Arrays.stream(a[i]).sum();
-            int b = total / a[i].length;
-            double c = 100.0 / a[i].length;
+            int N = sc.nextInt();
+            int arr[] = new int[N];
+
+            for (int m = 0; m < N; m++){
+                int d = sc.nextInt();
+                arr[m] = d;
+            }
+
+            int total = Arrays.stream(arr).sum();
+            int b = total / N;
+            double c = 100.0 / N;
             double d = 0;
-            for (int j = 0; j < a[i].length; j++) {
-                if (a[i][j] > b) {
+            for (int j = 0; j < N; j++) {
+                if (arr[j] > b) {
                     d += c;
                 }
             }
-            System.out.println(String.format("%.3f", d));
+            System.out.println(String.format("%.3f", d)+"%");
         }
     }
 }
