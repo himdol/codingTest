@@ -5,8 +5,6 @@ import java.util.Scanner;
 
 public class Step_4344 {
     public static void main(String[] args) {
-//        Scanner sc = new Scanner(System.in);
-//        int total_Count = sc.nextInt();
 
         int a[][] = {
                 {50, 50, 70, 80, 100}
