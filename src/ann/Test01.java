@@ -1,5 +1,7 @@
 package EampleTest.src.ann;
 
+import java.util.ArrayList;
+
 public class Test01 {
 
     public static void main(String[] args) {
@@ -16,6 +18,8 @@ public class Test01 {
         System.out.println("a".hashCode());
         System.out.println(b.hashCode());
         System.out.println(b.hashCode());
+
+        ArrayList<String> arr = new ArrayList<>();
     }
 
 }
